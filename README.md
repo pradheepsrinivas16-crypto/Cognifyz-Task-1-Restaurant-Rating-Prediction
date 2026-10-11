@@ -55,6 +55,17 @@ The tuned Random Forest's reported R² is **0.661**; the **0.655** score above i
 
 These results describe performance on the held-out test split of this dataset. They do not guarantee the same accuracy on new datasets or in a live restaurant-rating system.
 
+## Visual Results
+
+The executed notebook includes the visual analysis and diagnostic plots:
+- **Rating distribution** — distribution of aggregate ratings for rated restaurants.
+- **Exploratory analysis** — rating by price range and relationships with votes and location-related features.
+- **Actual vs. predicted ratings** — checks how closely predictions follow the held-out test targets.
+- **Residual/error analysis** — examines prediction errors across rating bands.
+- **Permutation feature importance** — highlights which input features contribute most to predictive performance.
+
+Open the [notebook](Task_1_Cognifyz_Restaurant_Rating_Prediction_CV_Safe.ipynb) on GitHub to view the plots and their accompanying explanations.
+
 ## Repository Contents
 
 - `Task_1_Cognifyz_Restaurant_Rating_Prediction_CV_Safe.ipynb` — notebook containing the analysis, model training, evaluation, and visualizations.

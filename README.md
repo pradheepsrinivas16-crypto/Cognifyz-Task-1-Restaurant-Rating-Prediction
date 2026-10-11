@@ -57,14 +57,25 @@ These results describe performance on the held-out test split of this dataset. T
 
 ## Visual Results
 
-The executed notebook includes the visual analysis and diagnostic plots:
-- **Rating distribution** — distribution of aggregate ratings for rated restaurants.
-- **Exploratory analysis** — rating by price range and relationships with votes and location-related features.
-- **Actual vs. predicted ratings** — checks how closely predictions follow the held-out test targets.
-- **Residual/error analysis** — examines prediction errors across rating bands.
-- **Permutation feature importance** — highlights which input features contribute most to predictive performance.
+### Rating Distribution
+![Distribution of Aggregate Rating](rating-distribution.png)
 
-Open the [notebook](Task_1_Cognifyz_Restaurant_Rating_Prediction_CV_Safe.ipynb) on GitHub to view the plots and their accompanying explanations.
+The ratings for restaurants included in the supervised modelling dataset are concentrated mostly around the low-to-mid 3s.
+
+### Exploratory Analysis
+![Rating by price range, votes, and online delivery](exploratory-analysis.png)
+
+These plots compare ratings across price ranges, against vote counts on a log scale, and by online-delivery availability.
+
+### Model Diagnostics
+![Actual vs predicted ratings and residuals](actual-vs-predicted-and-residuals.png)
+
+The actual-versus-predicted plot compares test-set predictions with the perfect-prediction line. The residual plot helps inspect prediction errors across the predicted-rating range.
+
+### Permutation Feature Importance
+![Permutation feature importance](permutation-feature-importance.png)
+
+Votes has the largest permutation importance in this run, followed by cuisines, city, longitude, and latitude. Importance reflects predictive usefulness in this dataset, not causal influence.
 
 ## Repository Contents
 
